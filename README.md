@@ -4,7 +4,7 @@ Organize agent guidance around **where the output ships** — email, social, blo
 
 ## Who this is for
 
-This template works best for **teams organized around channels** — where you have "the email person," "the social person," and "the SEO person," each with their own platform expertise, compliance requirements, and success metrics. It's a natural fit for agencies managing multiple channels for clients, or in-house teams where each channel has enough nuance that a single set of rules would be too noisy. If your team's org chart maps to marketing channels, your agent guidance should too.
+This template works best for **teams organized around channels** — where you have "the email person," "the social person," and "the SEO person," each with their own platform expertise, compliance requirements, and success metrics. Also a natural fit for agencies managing multiple channels for clients.
 
 ## When to use this
 
@@ -18,9 +18,9 @@ This template works best for **teams organized around channels** — where you h
 2. **Start with the root `CLAUDE.md`** — fill in your brand identity, voice, audiences, and legal rules
 3. **Customize each channel's `CLAUDE.md`** in `channels/` — delete channels you don't use, tailor the rest to your platforms and workflows
 4. **Update the skill files** in `skills/` — these are cross-channel references for segmentation, testing, competitive intel, and reporting
-5. **Use Claude Code from the channel directory** that matches the task — `cd channels/email/` for email work, `cd channels/social/` for social work
+5. **Run the agent from the channel directory** that matches the task — `cd channels/email/` for email work, `cd channels/social/` for social work
 6. **Add new channels** as needed — just `mkdir -p channels/new-channel` and create a `CLAUDE.md` in it
-7. **Iterate** — when Claude gets something wrong, update the relevant file
+7. **Iterate** — when the agent gets something wrong, update the relevant file
 
 ## File structure
 
@@ -66,3 +66,7 @@ An agent drafting an email campaign gets brand voice + email rules. An agent wri
 mkdir -p channels/new-channel
 # Create channels/new-channel/CLAUDE.md with channel-specific rules
 ```
+
+## License
+
+MIT License. Use this template however you like.
